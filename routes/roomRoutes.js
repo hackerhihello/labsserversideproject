@@ -5,7 +5,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * api/rooms:
+ * /api/rooms:
  *   get:
  *     summary: Get all rooms
  *     tags: [Room]
@@ -42,7 +42,7 @@ router.get('/', authenticateToken, getAllRooms);
 
 /**
  * @swagger
- * api/rooms:
+ * /api/rooms:
  *   post:
  *     summary: Create a new room
  *     tags: [Room]
@@ -87,7 +87,7 @@ router.post('/', authenticateToken, createRoom);
 
 /**
  * @swagger
- * api/rooms/book:
+ * /api/rooms/book:
  *   post:
  *     summary: Book a room
  *     tags: [Room]
