@@ -1,0 +1,68 @@
+npm install swagger-jsdoc swagger-ui-express
+
+
+http://localhost:5000/api-docs
+
+-----------------------------------------------------------------
+####################################################################
+
+Example of API calls (using Swagger UI):
+Register User:
+
+Method: POST
+URL: /auth/register
+Body:  
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123",
+  "role": "user"
+}
+
+####################################################################
+
+Login User:
+
+Method: POST
+URL: /auth/login
+Body:
+
+{
+  "email": "john@example.com",
+  "password": "password123"
+}
+
+####################################################################
+
+Create Room (authentication required):
+
+Method: POST
+URL: /rooms
+Headers:
+Authorization: Bearer <Your JWT Token>
+Body:
+{
+  "name": "Meeting Room",
+  "building": "LABS Atrium",
+  "type": "Meeting Room",
+  "capacity": 10,
+  "price": 50
+}
+
+####################################################################
+
+Book Room (authentication required):
+
+Method: POST
+URL: /rooms/book
+Headers:
+Authorization: Bearer <Your JWT Token>
+Body:
+{
+  "roomId": "roomId_here",
+  "userId": "userId_here",
+  "startDate": "2024-12-17T09:00:00",
+  "endDate": "2024-12-17T17:00:00"
+}
+
