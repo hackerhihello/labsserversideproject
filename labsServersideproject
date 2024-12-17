@@ -2,6 +2,7 @@ npm install swagger-jsdoc swagger-ui-express
 
 
 http://localhost:5000/api-docs
+https://labsserversideproject.onrender.com/api-docs/
 
 -----------------------------------------------------------------
 ####################################################################
