@@ -26,7 +26,7 @@ Body:
 Login User:
 
 Method: POST
-URL: /auth/login
+URL: api/auth/login
 Body:
 
 {
